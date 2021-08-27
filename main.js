@@ -1,11 +1,11 @@
-var contentArray = ["Coder", "Designer", "Studient", "Web Developer"]
+var contentArray = ["Coder", "Designer", "Student", "Web Developer"]
 var i=0
 
 var interval = setInterval(function(){
     document.getElementById("txt").innerText = contentArray[i]
     i++
     if (i>=contentArray.length) i=0;
-},1000)
+},2000)
 
 
 // scroll ef
