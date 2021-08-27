@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --blue: #409fff;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: #fff;
+}
+
+.colorBlue{
+    color: var(--blue);
+}
+
+.sticky{
+    position: fixed !important;
+    height: 70px !important;
+    background-color: var(--blue);
+    padding: 10px 60px !important;
+}
+
+.sticky ul li:first-child{
+    display: none;
+}
+
+.sticky ul li{
+    line-height: 50px !important;
+}
+
+.sticky a:hover{
+    color: #fff !important;
+}
+
+.sticky ul li a:after{    
+    background: #fff !important;
+}
+
+header{
+    /* height: 100vh; */
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(./img/headerBG.jpg);
+    background-size:cover;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 60px;
+    height: 120px;
+    user-select: none;
+    transition: .3s;
+}
+
+#logo{
+    height: 100%;
+    float: left;
+}
+
+#menu{
+    display: none;
+}
+
+#navbar{
+    cursor: default;
+    float: right;
+    font-weight: 500;
+}
+
+#navbar ul li:first-child{
+    display: none;
+}
+
+#navbar ul li{
+    display: inline;
+    position: relative;
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 70px;
+}
+#navbar ul li a{
+    position: relative;
+    transition: .3s;
+}
+
+#navbar ul li a:hover{
+    color: var(--blue);
+}
+
+#navbar ul li a:after{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--blue);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#navbar ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#intro{
+    color: #fff;
+    text-align: center;
+    padding: calc(10vh + 100px) 0;
+}
+
+#intro h1{
+    font-size: 60px;
+}
+
+#intro h2{
+    font-size: 50px;
+}
+
+#intro button{
+    transition: .3s;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    background: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--blue);
+}
+
+#intro button:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.body .title{
+    text-align: center;
+}
+
+#about, 
+#skill,
+#contact{
+    padding: 75px 60px;
+    /* height: 100vh; */
+}
+
+.content{
+    display: flex;
+}
+
+.content img{
+    width: 50%;
+    margin: 20px;
+    border-radius: 60px;
+}
+
+.content_text{
+    padding: 20px;
+    width: 49%;
+}
+
+#about button{
+    margin: .8rem 0;
+    transition: .3s;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--white); 
+    background-color: var(--blue);
+}
+
+#about button:hover{
+    color: var(--blue);
+    background: none;
+}
+
+#skill{
+    background-color: #333;
+    color: #fff;
+}
+
+.boderbar{
+    width: 100%;
+    border: 1px solid #fff;
+    height: 10px;
+}
+
+.progressbar{
+    height: 100%;
+    background: #ffffff;
+}
+
+footer{
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a{
+    font-size: 24px;
+    margin: 0 10px;
+    transition: .3s;
+}
+footer a:hover{
+    color: var(--blue);
+}
